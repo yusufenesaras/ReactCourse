@@ -1,0 +1,3 @@
+props:bir component den başka bir componente data taşıma işlemi
+state:bir componentin datası. Bir componente ait data tutmak için
+state kullanıyoruz.
