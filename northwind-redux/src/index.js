@@ -4,14 +4,17 @@ import App from "./components/root/App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Provider } from "react-redux";
-import configureStore from "./redux/reducers/configureStore"
-
+import configureStore from "./redux/reducers/configureStore";
+import "alertifyjs/build/css/alertify.min.css";
+import { BrowserRouter } from "react-router-dom";
 const store = configureStore();
 
 ReactDOM.render(
-  <Provider store = {store}>
-    <App />
-  </Provider>,
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>,
 
   document.getElementById("root")
 );
